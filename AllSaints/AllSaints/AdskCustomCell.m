@@ -56,14 +56,14 @@ subview.backgroundColor = [UIColor colorWithPatternImage:image];
 */
 
   
-        UIImageView *deleteBtn = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, subview.frame.size.width, subview.frame.size.height)];
-        deleteBtn.contentMode = UIViewContentModeScaleToFill;
-        [deleteBtn setImage:[UIImage imageNamed:@"DeleteIconSkull%402x.png"]];
-         UIImageView *deleteBtn2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, subview.frame.size.width, subview.frame.size.height)];
-        deleteBtn.contentMode = UIViewContentModeScaleToFill;
-        [deleteBtn setImage:[UIImage imageNamed:@"DeleteIconSkull%402x.png"]];
-        [[subview.subviews objectAtIndex:0] addSubview:deleteBtn];
-         [[subview.subviews objectAtIndex:0] addSubview:deleteBtn2];
+	//UIImageView *deleteBtn = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, subview.frame.size.width, subview.frame.size.height)];
+	//deleteBtn.contentMode = UIViewContentModeScaleToFill;
+	//[deleteBtn setImage:[UIImage imageNamed:@"DeleteIconSkull%402x.png"]];
+	//UIImageView *deleteBtn2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, subview.frame.size.width, subview.frame.size.height)];
+	//deleteBtn.contentMode = UIViewContentModeScaleToFill;
+	//[deleteBtn setImage:[UIImage imageNamed:@"DeleteIconSkull%402x.png"]];
+	//[[subview.subviews objectAtIndex:0] addSubview:deleteBtn];
+	//[[subview.subviews objectAtIndex:0] addSubview:deleteBtn2];
   
          break;
 
