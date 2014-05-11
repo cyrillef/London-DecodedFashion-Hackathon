@@ -221,9 +221,14 @@ if (!_objects) {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
    //UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(editObject:)];
-  self.navigationItem.leftBarButtonItem = self.editButtonItem;
+  //self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-  UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+
+//  UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+  UIBarButtonItem *addButton = [[UIBarButtonItem alloc]
+initWithImage:[UIImage imageNamed:@"ShoppingBag.png"]
+   style:UIBarButtonItemStylePlain
+    target:self action:nil];
   self.navigationItem.rightBarButtonItem = addButton;
   self.detailViewController = (AdskDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
   
