@@ -115,6 +115,8 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
 }
 
 - (void)photoPickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [self dismissViewControllerAnimated:YES completion:nil] ;
+	
     UIImage *image =[info objectForKey:UIImagePickerControllerOriginalImage] ;
 	UIImage *allSaints =[UIImage imageNamed:@"allsaints.png"] ;
 	CGSize newSize =CGSizeMake (image.size.width, image.size.height) ;
@@ -168,7 +170,6 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
     //resultImage.image =newImage ;
 	data.extraImage =newImage ;
 	self.extraImage.image =newImage ;
-    [self dismissViewControllerAnimated:YES completion:nil] ;
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {

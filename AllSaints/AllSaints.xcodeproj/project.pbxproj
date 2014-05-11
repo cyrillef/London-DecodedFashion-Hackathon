@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6723B34191F9084009E4052 /* LaundingPage640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = E6723B33191F9084009E4052 /* LaundingPage640x960.png */; };
 		E6E8B639191F72500040D541 /* ShoppingBag.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E8B637191F72500040D541 /* ShoppingBag.png */; };
 		E6E8B63A191F72500040D541 /* ShoppingBag%402x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E8B638191F72500040D541 /* ShoppingBag%402x.png */; };
 		E6E8B63E191F72670040D541 /* AppIcon58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E8B63B191F72670040D541 /* AppIcon58x58.png */; };
@@ -86,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6723B33191F9084009E4052 /* LaundingPage640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaundingPage640x960.png; sourceTree = "<group>"; };
 		E6E8B637191F72500040D541 /* ShoppingBag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShoppingBag.png; sourceTree = "<group>"; };
 		E6E8B638191F72500040D541 /* ShoppingBag%402x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShoppingBag%402x.png"; sourceTree = "<group>"; };
 		E6E8B63B191F72670040D541 /* AppIcon58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon58x58.png; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 		F739F52B191EC100004EA18A /* AllSaints */ = {
 			isa = PBXGroup;
 			children = (
+				E6723B33191F9084009E4052 /* LaundingPage640x960.png */,
 				F72C550F191F8B8F00692AB4 /* LaunchPage.png */,
 				F72C5510191F8B8F00692AB4 /* LauchPage%402x.png */,
 				F72C550B191F7B6500692AB4 /* PersonalDress.JPG */,
@@ -448,6 +451,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Adam Nagy";
 				TargetAttributes = {
+					F739F521191EC100004EA18A = {
+						DevelopmentTeam = U8UWQDJEHX;
+					};
 					F739F548191EC100004EA18A = {
 						TestTargetID = F739F521191EC100004EA18A;
 					};
@@ -481,6 +487,7 @@
 				F739F58E191F14D7004EA18A /* zbar-back.png in Resources */,
 				F739F56B191F1083004EA18A /* DeleteIconSkull%402x.png in Resources */,
 				F739F5B0191F57B5004EA18A /* NewShareButton%402x.png in Resources */,
+				E6723B34191F9084009E4052 /* LaundingPage640x960.png in Resources */,
 				E6E8B63A191F72500040D541 /* ShoppingBag%402x.png in Resources */,
 				F739F591191F14D7004EA18A /* zbar-samples.png in Resources */,
 				F739F53C191EC100004EA18A /* Main_iPad.storyboard in Resources */,
@@ -681,6 +688,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AllSaints/AllSaints-Prefix.pch";
 				INFOPLIST_FILE = "AllSaints/AllSaints-Info.plist";
@@ -689,6 +698,7 @@
 					"$(PROJECT_DIR)/ZBarSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -698,6 +708,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AllSaints/AllSaints-Prefix.pch";
 				INFOPLIST_FILE = "AllSaints/AllSaints-Info.plist";
@@ -706,6 +718,7 @@
 					"$(PROJECT_DIR)/ZBarSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
