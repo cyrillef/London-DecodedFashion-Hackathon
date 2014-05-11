@@ -22,5 +22,6 @@ UITextView *resultText ;
 
 @property (nonatomic, retain) IBOutlet UIImageView *resultImage ;
 @property (nonatomic, retain) IBOutlet UITextView *resultText ;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

@@ -17,6 +17,7 @@
 @implementation AdskDetailViewController
 
 @synthesize resultImage ;
+@synthesize resultText ;
 
 #pragma mark - Managing the detail item
 

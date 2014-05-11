@@ -166,10 +166,14 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-8y-MTL">
-                                        <rect key="frame" x="20" y="114" width="280" height="434"/>
+                                        <rect key="frame" x="20" y="114" width="280" height="296"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PersonalDress.png" translatesAutoresizingMaskIntoConstraints="NO" id="XyO-Wb-GcJ">
+                                        <rect key="frame" x="20" y="418" width="280" height="194"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -177,6 +181,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>
+                        <outlet property="scrollView" destination="CWr-Mg-ZB2" id="KIc-Ae-1lp"/>
                         <outlet property="theDescription" destination="WWK-8y-MTL" id="wId-Mo-uQO"/>
                         <outlet property="theImage" destination="y3n-wl-TZl" id="C4X-7U-wAR"/>
                         <outlet property="theText" destination="aS5-wp-ho4" id="HzX-kh-UC9"/>
@@ -189,6 +194,7 @@
     </scenes>
     <resources>
         <image name="LogInPage%402x.png" width="640" height="1136"/>
+        <image name="PersonalDress.png" width="470" height="539"/>
         <image name="Register.png" width="86" height="29"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllSaints/AdskDetailViewController.m"
-            timestampString = "421484382.045676"
+            timestampString = "421493650.923993"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-configureView"
             landmarkType = "5">
          </BreakpointContent>

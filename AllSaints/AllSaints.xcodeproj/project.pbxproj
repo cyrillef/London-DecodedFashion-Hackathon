@@ -16,6 +16,8 @@
 		E6E8B644191F72D80040D541 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E8B643191F72D80040D541 /* CoreMedia.framework */; };
 		E6E8B646191F72E40040D541 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E8B645191F72E40040D541 /* CoreVideo.framework */; };
 		E6E8B648191F72F00040D541 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E8B647191F72F00040D541 /* QuartzCore.framework */; };
+		F72C550D191F7B6500692AB4 /* PersonalDress.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F72C550B191F7B6500692AB4 /* PersonalDress.JPG */; };
+		F72C550E191F7B6500692AB4 /* PersonalDress.png in Resources */ = {isa = PBXBuildFile; fileRef = F72C550C191F7B6500692AB4 /* PersonalDress.png */; };
 		F739F526191EC100004EA18A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F739F525191EC100004EA18A /* Foundation.framework */; };
 		F739F528191EC100004EA18A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F739F527191EC100004EA18A /* CoreGraphics.framework */; };
 		F739F52A191EC100004EA18A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F739F529191EC100004EA18A /* UIKit.framework */; };
@@ -91,6 +93,8 @@
 		E6E8B643191F72D80040D541 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E6E8B645191F72E40040D541 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E6E8B647191F72F00040D541 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F72C550B191F7B6500692AB4 /* PersonalDress.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PersonalDress.JPG; sourceTree = "<group>"; };
+		F72C550C191F7B6500692AB4 /* PersonalDress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PersonalDress.png; sourceTree = "<group>"; };
 		F739F522191EC100004EA18A /* AllSaints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllSaints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F739F525191EC100004EA18A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F739F527191EC100004EA18A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -243,6 +247,8 @@
 		F739F52B191EC100004EA18A /* AllSaints */ = {
 			isa = PBXGroup;
 			children = (
+				F72C550B191F7B6500692AB4 /* PersonalDress.JPG */,
+				F72C550C191F7B6500692AB4 /* PersonalDress.png */,
 				E6E8B63B191F72670040D541 /* AppIcon58x58.png */,
 				E6E8B63C191F72670040D541 /* AppIcon80x80.png */,
 				E6E8B63D191F72670040D541 /* AppIcon120x120.png */,
@@ -478,6 +484,7 @@
 				F739F56D191F1083004EA18A /* AppIcon.png in Resources */,
 				F739F5B3191F57B5004EA18A /* LogInPage.png in Resources */,
 				F739F596191F151A004EA18A /* scantarget.png in Resources */,
+				F72C550E191F7B6500692AB4 /* PersonalDress.png in Resources */,
 				F739F569191F1083004EA18A /* DeleteScreen%402X.png in Resources */,
 				F739F5AF191F57B5004EA18A /* Profile.png in Resources */,
 				F739F5C2191F641D004EA18A /* Register.png in Resources */,
@@ -504,6 +511,7 @@
 				F739F5AE191F57B5004EA18A /* Profile%402x.png in Resources */,
 				F739F5AC191F57B5004EA18A /* ScanButton%402x.png in Resources */,
 				F739F530191EC100004EA18A /* InfoPlist.strings in Resources */,
+				F72C550D191F7B6500692AB4 /* PersonalDress.JPG in Resources */,
 				F739F5B2191F57B5004EA18A /* LogInPage%402x.png in Resources */,
 				F739F5B1191F57B5004EA18A /* NewShareButton.png in Resources */,
 				F739F5AA191F57B5004EA18A /* WishListIcon%402x.png in Resources */,
