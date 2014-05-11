@@ -151,20 +151,23 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
 	[attributes setObject:[UIColor blackColor] forKey:NSForegroundColorAttributeName] ;
 
 	CGRect rect =CGRectMake (0, newSize.height - 2 * allsaintsSize.height, newSize.width, allsaintsSize.height) ;
-	[@"Model Name" drawInRect:rect withAttributes:attributes] ;
+	AdskData *data =(AdskData *)_detailItem ;
+	[data.name drawInRect:rect withAttributes:attributes] ;
 	rect =CGRectMake (newSize.width / 2.0, newSize.height - 2 * allsaintsSize.height, newSize.width / 2.0, allsaintsSize.height) ;
 	//[@"Size 6" drawInRect:rect withAttributes:attributesRight] ;
-	[@"Size 6" drawInRect:rect withFont:font lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentRight] ;
+	[data.size drawInRect:rect withFont:font lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentRight] ;
 	rect =CGRectMake (0, newSize.height - 1.5 * allsaintsSize.height, newSize.width, allsaintsSize.height) ;
-	[@"Color" drawInRect:rect withAttributes:attributes] ;
+	[data.color drawInRect:rect withAttributes:attributes] ;
 	rect =CGRectMake (newSize.width / 2.0, newSize.height - 1.5 * allsaintsSize.height, newSize.width / 2.0, allsaintsSize.height) ;
 	//[@"Price" drawInRect:rect withAttributes:attributesRight] ;
-	[@"Price" drawInRect:rect withFont:font lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentRight] ;
+	[data.price drawInRect:rect withFont:font lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentRight] ;
 
 	UIImage *newImage =UIGraphicsGetImageFromCurrentImageContext () ;
 	UIGraphicsEndImageContext () ;
 	
-    resultImage.image =newImage ;
+    //resultImage.image =newImage ;
+	data.extraImage =newImage ;
+	self.extraImage.image =newImage ;
     [self dismissViewControllerAnimated:YES completion:nil] ;
 }
 
