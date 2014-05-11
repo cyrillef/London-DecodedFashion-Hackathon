@@ -181,6 +181,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>
+                        <outlet property="extraImage" destination="XyO-Wb-GcJ" id="2f8-la-wzJ"/>
                         <outlet property="scrollView" destination="CWr-Mg-ZB2" id="KIc-Ae-1lp"/>
                         <outlet property="theDescription" destination="WWK-8y-MTL" id="wId-Mo-uQO"/>
                         <outlet property="theImage" destination="y3n-wl-TZl" id="C4X-7U-wAR"/>

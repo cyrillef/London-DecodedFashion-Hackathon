@@ -20,6 +20,7 @@
   NSString * name;
   NSString * descr;
   UIImage * image;
+    UIImage * extraImage;
 }
 @end
 
@@ -32,6 +33,7 @@
 @synthesize price;
 @synthesize size;
 @synthesize image;
+@synthesize extraImage;
 
 @end
 
