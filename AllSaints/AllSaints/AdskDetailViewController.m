@@ -48,7 +48,8 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
  self.theImage.contentMode = UIViewContentModeScaleAspectFit;
  self.theImage.image = data.image;
  self.theText.text = [NSString stringWithFormat:@"%@, %@, \n%@, \n%@", data.name, data.color, data.size, data.price];
-  
+	  self.extraImage.image =data.image ;
+
   self.navigationController.toolbarHidden = false;
 
   UIBarButtonItem *scanButton = [[UIBarButtonItem alloc]
@@ -57,8 +58,28 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
    style:UIBarButtonItemStylePlain
    target:self
    action:@selector(email_clicked:)];
+	  scanButton.tintColor =[UIColor blackColor];
 
-  NSArray *buttonArray = [NSArray arrayWithObjects:scanButton, nil];
+	  UIBarButtonItem *shareButton = [[UIBarButtonItem alloc]
+										 //initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+										 initWithImage:[UIImage imageNamed:@"NewShareButton.png"]
+										 style:UIBarButtonItemStylePlain
+										 target:self
+										 action:nil];
+	  shareButton.tintColor =[UIColor blackColor];
+	  
+	  UIBarButtonItem *discoverButton = [[UIBarButtonItem alloc]
+									 //initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+									 initWithImage:[UIImage imageNamed:@"DiscoverButton.png"]
+									 style:UIBarButtonItemStylePlain
+									 target:self
+									 action:nil];
+	  discoverButton.tintColor =[UIColor blackColor];
+	  
+	  UIBarButtonItem* flexibleSpace = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+
+
+  NSArray *buttonArray = [NSArray arrayWithObjects:scanButton, flexibleSpace, shareButton, flexibleSpace, discoverButton, nil];
   self.toolbarItems = buttonArray;
 
       //self.detailDescriptionLabel.text = [self.detailItem description];
@@ -67,14 +88,15 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
 
 - (void)email_clicked:(id)sender
 {
-  [self takePhotoTapped];
+	[self takePhotoTapped];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-  [self configureView];
+	[self configureView];
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -173,7 +195,7 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-		[self photoPickerController:picker didFinishPickingMediaWithInfo:info] ;
+	[self photoPickerController:picker didFinishPickingMediaWithInfo:info] ;
 }
 
 

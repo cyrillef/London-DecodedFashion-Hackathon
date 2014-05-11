@@ -223,6 +223,7 @@ if (!_objects) {
    //UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(editObject:)];
   //self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
+	
 
 //  UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
   UIBarButtonItem *addButton = [[UIBarButtonItem alloc]
@@ -241,6 +242,7 @@ initWithImage:[UIImage imageNamed:@"ShoppingBag.png"]
    style:UIBarButtonItemStylePlain
    target:self
    action:@selector(email_clicked:)];
+	profileButton.tintColor =[UIColor blackColor];
   
    UIBarButtonItem* flexibleSpace = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
   
@@ -251,6 +253,7 @@ initWithImage:[UIImage imageNamed:@"ShoppingBag.png"]
    style:UIBarButtonItemStylePlain
    target:self
    action:@selector(email_clicked:)];
+	scanButton.tintColor =[UIColor blackColor];
 
 // Wishlist
   UIBarButtonItem *wishButton = [[UIBarButtonItem alloc]
@@ -259,6 +262,7 @@ initWithImage:[UIImage imageNamed:@"ShoppingBag.png"]
    style:UIBarButtonItemStylePlain
    target:self
    action:@selector(email_clicked:)];
+	wishButton.tintColor =[UIColor blackColor];
 
 
   NSArray *buttonArray = [NSArray arrayWithObjects: profileButton, flexibleSpace, scanButton, flexibleSpace, wishButton, nil];
@@ -405,7 +409,7 @@ NSLog(@"(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSInde
     }
 */
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = _objects[indexPath.row];
+        AdskData *object = _objects[indexPath.row];
         self.detailViewController.detailItem = object;
     }
 }
