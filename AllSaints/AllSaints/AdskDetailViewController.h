@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AdskDetailViewController : UIViewController <UISplitViewControllerDelegate, UIImagePickerControllerDelegate> {
+@interface AdskDetailViewController : UIViewController <UISplitViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 UIImageView *resultImage ;
 UITextView *resultText ;
 }

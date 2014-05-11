@@ -104,23 +104,6 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
 
 // Image Picking
 
-
-- (void)scanPickerController:(UIImagePickerController *)reader didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    // get the decode results
-    id<NSFastEnumeration> results =[info objectForKey:ZBarReaderControllerResults] ;
-    ZBarSymbol *symbol =nil ;
-    for( symbol in results )
-        // just grab the first barcode
-        break ;
-	
-    // do something useful with the barcode data
-    resultText.text =symbol.data ;
-	// do something useful with the barcode image
-    resultImage.image =[info objectForKey:UIImagePickerControllerOriginalImage] ;
-	
-    [reader dismissViewControllerAnimated:YES completion:nil] ;
-}
-
 - (IBAction)takePhotoTapped {
     UIImagePickerController *imagePicker =[[UIImagePickerController alloc] init] ;
     if ( [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] )
@@ -186,11 +169,7 @@ data.descr = [AdskMasterViewController getProperty:data.ean name:@"description"]
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-	id obj =[info objectForKey:ZBarReaderControllerResults] ;
-	if ( obj == nil )
 		[self photoPickerController:picker didFinishPickingMediaWithInfo:info] ;
-	else
-		[self scanPickerController:picker didFinishPickingMediaWithInfo:info] ;
 }
 
 

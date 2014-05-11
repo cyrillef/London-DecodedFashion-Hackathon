@@ -76,11 +76,17 @@
         break ;
 	
     // do something useful with the barcode data
-    resultText.text =symbol.data ;
+    //resultText.text =symbol.data ;
+	[_objects insertObject:[AdskMasterViewController getData:symbol.data] atIndex:0];
+	[self.tableView reloadData] ;
 	// do something useful with the barcode image
-    resultImage.image =[info objectForKey:UIImagePickerControllerOriginalImage] ;
+    //resultImage.image =[info objectForKey:UIImagePickerControllerOriginalImage] ;
 	
     [reader dismissViewControllerAnimated:YES completion:nil] ;
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+	[self scanPickerController:picker didFinishPickingMediaWithInfo:info] ;
 }
 
 - (void)awakeFromNib
@@ -177,10 +183,10 @@
 
 
 
- NSString * s = [[NSString alloc]
+ /*NSString * s = [[NSString alloc]
                   initWithData:result
                   encoding:NSUTF8StringEncoding];
-
+*/
  data.name = [[[[[json objectForKey:@"response"] objectForKey:@"content"] objectForKey:@"products"] objectForKey:@"product"] objectForKey:@"style_name"];
  
 

@@ -25,7 +25,7 @@
 
 @class AdskDetailViewController;
 
-@interface AdskMasterViewController : UITableViewController<ZBarReaderDelegate> {
+@interface AdskMasterViewController : UITableViewController<ZBarReaderDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 UITextView *resultText ;
 UIImageView *resultImage ;
 }
