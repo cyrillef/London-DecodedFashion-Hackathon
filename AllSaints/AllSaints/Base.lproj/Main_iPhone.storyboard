@@ -102,7 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogInPage%402x.png" translatesAutoresizingMaskIntoConstraints="NO" id="93K-XK-5ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchPage.png" translatesAutoresizingMaskIntoConstraints="NO" id="93K-XK-5ok">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -113,13 +113,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rko-FQ-cRb">
-                                <rect key="frame" x="76" y="289" width="169" height="30"/>
+                                <rect key="frame" x="76" y="261" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USa-PJ-GgF">
-                                <rect key="frame" x="117" y="334" width="86" height="52"/>
+                                <rect key="frame" x="117" y="312" width="86" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Register.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,7 +194,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LogInPage%402x.png" width="640" height="1136"/>
+        <image name="LaunchPage.png" width="320" height="568"/>
         <image name="PersonalDress.png" width="470" height="539"/>
         <image name="Register.png" width="86" height="29"/>
     </resources>
